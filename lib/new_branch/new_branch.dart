@@ -15,7 +15,12 @@ class _NewBranchState extends State<NewBranch> {
         title: const Text("New Branch Testing"),
       ),
       body: const Center(
-        child: Text("all about Branch"),
+        child: Text(
+          "all about iygyg ",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
     );
   }
