@@ -16,9 +16,9 @@ class _NewBranchState extends State<NewBranch> {
       ),
       body: const Center(
         child: Text(
-          "all about iygyg ",
+          "all about Brbjhvuhb",
           style: TextStyle(
-            fontWeight: FontWeight.bold,
+            fontSize: 30,
           ),
         ),
       ),
