@@ -12,10 +12,15 @@ class _NewBranchState extends State<NewBranch> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("New Branch Testing"),
+        title: const Text("New uytfytfuhbuhkggugvh Testing"),
       ),
       body: const Center(
-        child: Text("all about Branch"),
+        child: Text(
+          "all about Brbjhvuhb",
+          style: TextStyle(
+            fontSize: 30,
+          ),
+        ),
       ),
     );
   }
