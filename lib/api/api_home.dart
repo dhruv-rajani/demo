@@ -38,7 +38,7 @@ class _ApiHomeState extends State<ApiHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Api Demo"),
+        title: const Text("Api Calling"),
       ),
       body: FutureBuilder(
         future: ApiHelper.getData(),
