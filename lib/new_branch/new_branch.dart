@@ -14,6 +14,9 @@ class _NewBranchState extends State<NewBranch> {
       appBar: AppBar(
         title: const Text("New Branch"),
       ),
+      body: const Center(
+        child: Text("all about Branch"),
+      ),
     );
   }
 }
