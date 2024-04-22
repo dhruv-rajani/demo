@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_topics/api/api_helper.dart';
 
@@ -15,24 +13,58 @@ class _ApiHomeState extends State<ApiHome> {
   @override
   void initState() {
     // TODO: implement initState
-    super.initState();
     ApiHelper.getData();
-    d();
+    super.initState();
+    // delayedMethod();
+    // d();
+    // unAwaitedFuture();
+    // log("Okay");
+    // Future.wait([d(), e()]).then((value) => log(value.length.toString()));
+    // Future<String> fetchDataA() async {
+    //   await Future.delayed(
+    //       const Duration(seconds: 3)); // Simulate fetching data A
+    //   log('Data A fetched');
+    //   return "Dhruv";
+    // }
+    //
+    // Future<int> fetchDataB() async {
+    //   await Future.delayed(
+    //       const Duration(seconds: 1)); // Simulate fetching data B
+    //   log('Data B fetched');
+    //   return 5;
+    // }
+    //
+    // // Execute both functions in parallel
+    // Future.wait([fetchDataA(), fetchDataB()]).then(
+    //   (value) => log("After all Methods Call Value is ${value}"),
+    // );
   }
-
-  d() async {
-    await Future.delayed(const Duration(seconds: 4), () {
-      log(" async d ");
-
-      /// num datatype can accept both int and double
-      // num x = 5;
-      // num a = 10.02;
-      // print(a);
-    });
-    Future.delayed(const Duration(seconds: 2), () {
-      log(" async after 2 second ");
-    });
-  }
+  //
+  // void delayedMethod() async {
+  //   log("Before Delayed Method Call");
+  //   await Future.delayed(const Duration(seconds: 3), () {
+  //     log("After 3 Seconds Call");
+  //   });
+  //   log("After Delayed Method Call");
+  // }
+  //
+  // Future d() async {
+  //   await Future.delayed(const Duration(seconds: 5), () {
+  //     log(" async after 5 second form D ");
+  //   });
+  //   log(" async after 5 second form D after await");
+  // }
+  //
+  // void unAwaitedFuture() {
+  //   unawaited(d());
+  //   log("UnAwaited Call");
+  // }
+  //
+  // Future e() async {
+  //   await Future.delayed(const Duration(seconds: 2), () {
+  //     log(" async after 2 second");
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
