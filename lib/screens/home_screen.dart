@@ -72,6 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
               (context, index) {
                 return ListTile(
                   title: Text(items[index].toString()),
+                  leading: Text(items[index].toString()),
                 );
               },
             ),
