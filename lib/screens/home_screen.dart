@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
         slivers: [
           const SliverAppBar(
             pinned: true,
-            title: Text('Custom Scroll List'),
+            title: Text('Sliver AppBar'),
             expandedHeight: 200,
             flexibleSpace:
                 Placeholder(), // Replace with your flexible space widget
