@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
-                'HeaderSection',
+                'Header Section',
                 style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
               ),
             ),
