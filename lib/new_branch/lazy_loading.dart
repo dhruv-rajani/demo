@@ -38,7 +38,7 @@ class _LazyLoadingState extends State<LazyLoading> {
     Future.delayed(const Duration(seconds: 2), () {
       setState(() {
         _items.addAll(List.generate(10, (index) => _items.length + index + 1));
-        _isLoading = false;
+        // _isLoading = false;
       });
     });
   }
