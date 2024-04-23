@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 class MyPersistentHeaderDelegate extends SliverPersistentHeaderDelegate {
@@ -38,20 +36,10 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-    // timerDemo();
   }
 
-  // Timer? timer;
-  // void timerDemo() {
-  //   timer = Timer(const Duration(seconds: 1), () {
-  //     setState(() {
-  //       counter++;
-  //     });
-  //   });
-  // }
-
+  List<String> items = List.generate(20, (index) => "Index $index");
   int counter = 0;
   @override
   Widget build(BuildContext context) {
@@ -80,29 +68,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           SliverList(
             delegate: SliverChildBuilderDelegate(
-              childCount: 20,
-              (BuildContext context, int index) {
+              childCount: items.length,
+              (context, index) {
                 return ListTile(
-                  leading: CircleAvatar(
-                    child: Text("${index + 1}"),
-                  ),
-                  title: Text('Item ${index + 1}'),
-                  subtitle: Text('Description of Item $index'),
-                  trailing: const Icon(Icons.arrow_forward),
-                  onTap: () {
-                    log('Tapped on item $index');
-                  },
+                  title: Text(items[index].toString()),
                 );
               },
-            ),
-          ),
-          SliverToBoxAdapter(
-            child: Container(
-              padding: const EdgeInsets.all(16.0),
-              child: const Text(
-                'Footer Section',
-                style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-              ),
             ),
           ),
         ],
