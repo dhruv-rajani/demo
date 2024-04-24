@@ -66,17 +66,17 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
-          SliverList(
-            delegate: SliverChildBuilderDelegate(
-              // childCount: items.length,
-              (context, index) {
-                return ListTile(
-                  title: Text(items[index].toString()),
-                  leading: Text(items[index].toString()),
-                );
-              },
-            ),
-          ),
+          // SliverList(
+          //   delegate: SliverChildBuilderDelegate(
+          //     // childCount: items.length,
+          //     (context, index) {
+          //       return ListTile(
+          //         title: Text(items[index].toString()),
+          //         leading: Text(items[index].toString()),
+          //       );
+          //     },
+          //   ),
+          // ),
         ],
       ),
     );
